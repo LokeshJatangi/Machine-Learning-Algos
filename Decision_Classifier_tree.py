@@ -188,6 +188,7 @@ class DecisionTree():
                         
                         # Select all rows of target_attribute for entropy calculation
                         target_1 = combined_data_1[:,-1] # remember shape is 1D (x,)
+                        target_2 = combined_data_2[:,-1]
                         # Calculate information_gain 
                         info_gain = self._information_gain(target_attribute,target_1,target_2)
                         
